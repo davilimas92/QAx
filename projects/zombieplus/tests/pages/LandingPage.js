@@ -31,15 +31,6 @@ export class LandingPage {
 			.click()
 	}
 
-	async toastHaveText(message) {
-		const toast = this.page.locator('.toast')
-
-		//pegando informação do toast
-		await expect(toast).toHaveText(message)
-		//Deixando o toast visivel
-		await expect(toast).not.toBeVisible({ timeout: 5000 })
-	}
-
 	// toHaveText pode ser um texto simples ou uma lista
 	async alertHaveText(target) {
 		await expect(this.page.locator('.alert')).toHaveText(target)

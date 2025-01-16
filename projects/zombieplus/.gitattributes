@@ -1,0 +1,6 @@
+# Crie ou edite o arquivo .gitattributes
+echo "* text=auto" > .gitattributes
+
+# Adicione e faça o commit das alterações
+git add .gitattributes
+git commit -m "Add .gitattributes to handle line endings"
